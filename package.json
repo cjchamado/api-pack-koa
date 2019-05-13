@@ -1,5 +1,5 @@
 {
-  "name": "api-pack-koa",
+  "name": "@kolinalabs/api-pack-koa",
   "version": "1.0.0",
   "description": "KoaJS middlewares stack for nodejs-api-pack",
   "main": "index.js",
