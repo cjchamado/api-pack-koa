@@ -18,7 +18,7 @@ module.exports = (apiPack, operations) => {
 
         apiPack.operation = operation;
 
-        /** @todo Verificar a possibilidade de uso so ctx.state */
+        /** @todo Check the possibility of use only 'ctx.state' */
         ctx.ApiPack = apiPack;
 
         await next();
