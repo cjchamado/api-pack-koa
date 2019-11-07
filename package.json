@@ -1,6 +1,6 @@
 {
   "name": "@kolinalabs/api-pack-koa",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "KoaJS middlewares stack for nodejs-api-pack",
   "main": "index.js",
   "license": "MIT",

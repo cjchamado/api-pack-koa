@@ -11,15 +11,14 @@ module.exports = (apiPack, operations) => {
         operation.context = {
           request: ctx.request,
           errors: {
+            routeChecker: [],
             checker: [],
             validator: []
           }
         };
 
-        apiPack.operation = operation;
-
         /** @todo Check the possibility of use only 'ctx.state' */
-        ctx.ApiPack = apiPack;
+        ctx.ApiPack = apiPack.strictify(operation);
 
         await next();
       },

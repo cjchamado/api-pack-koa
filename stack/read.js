@@ -1,7 +1,7 @@
 module.exports = async (ctx, next) => {
   ctx.ApiPack.operation.identifiers = ctx.params;
-  ctx.ApiPack.operation.context.filters = ctx.query;
-  ctx.ApiPack.operation.context.query = ctx.query;
+  ctx.ApiPack.operation.context.filters = JSON.parse(JSON.stringify(ctx.query));
+  ctx.ApiPack.operation.context.query = JSON.parse(JSON.stringify(ctx.query));
 
   await ctx.ApiPack.read();
 
